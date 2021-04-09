@@ -101,6 +101,7 @@
         @media (max-width: $md) {
             padding: 5px 0px;
         } 
+        
         input {
             width: 100%;
             font-family: $font-noto;
@@ -120,6 +121,7 @@
                     margin-top: 20px;
                     margin-left: calc(50% - 75px);
                     text-transform: capitalize;
+                    
                     }   
                 }
                 .section {
