@@ -1,179 +1,188 @@
 .wrapper {
+  width: 100%;
+  height: 100%;
+  .main {
     width: 100%;
     height: 100%;
-    .main {
-        width: 100%;
-        height: 100%;
-        background-image: url('../img/bc/pexels-francesco-ungaro-1525041.jpg');
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .main_wrap {
-            width: 100%;
-            padding-top: 10px;
-            
-            img {
-               width: 100%;
-               max-width: 80px;
-               margin-left: calc(50% - 40px);
-               @media (max-width: $sm) {
-                max-width: 50px;
-                margin-left: calc(50% - 25px);
-            }
-        }
-        h1 {
-            text-shadow: 1px 1px 1px white;
-            width: 100%;
-            font-family: $font-noto;
-            max-width: 600px;
-            font-size: $large;
-            color: $myblack;
-                margin-left: calc(50% - 300px);
-                font-weight: bold;
-                text-align: center;
-                padding: 15px 0px;
-                @media (max-width: $md) {
-                    margin-left: 0px;
-                    font-size: $medium;
-                    padding: 5px 0px;
-                    }
-                }
-        }
-        p {
-            font-family: $font-roboto;
-            width: 100%;
-            max-width: 600px;
-            font-size: $small;
-            color: $blue;
-            margin-left: calc(50% - 300px);
-            text-align: center;
-            padding: 15px 0px;
-            text-shadow: 1px 1px 1px black;
-            @media (max-width: $md) {
-                margin-left: 0px;
-                margin-top: 10px;
-            }
-            @media (max-width: $md) {
-                padding: 5px 0px;
-            } 
-            }
-            .laikas {
-                font-family: $font-noto;
-             display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding-top: 25px;
-            width: 100%;
-            max-width: 600px;
-            margin-left: calc(50% - 300px);
-            height: 25vmin;
-            @media (max-width: $md) {
-                margin-left: 0px;
-            }
-            @media (max-width: $md) {
-                padding: 5px 0px;
-              }
-             }
-         .dienos { text-shadow: 1px 1px 1px $grey;
-             font-family: $font-roboto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: $medium;
-        height: 100%;
-        width: 25%;
-        margin: 2vmin;
-        @media (max-width: $md) {
-            font-size: $small;
-    }}}}
-    .email__form {
-        width: 100%;
-        max-width: 600px;
-        margin-left: calc(50% - 300px);
-        margin-top: 10%;
-        @media (max-width: $md) {
-            margin-left: 0px;
-        }
-        @media (max-width: $md) {
-            padding: 5px 0px;
-        } 
-        
-        input {
-            width: 100%;
-            font-family: $font-noto;
-                    background:transparent;
-                    border: 0;
-                    border-bottom: 2px solid $grey;
-                    font-size: $normal;
-                    text-transform: capitalize;
-                    &::placeholder {
-                        color: $grey;
-                        text-shadow: 1px 1px 1px white;
-                        line-height: 30px;
-                    }}
-                    button {
-                    width: 150px;
-                    height: 45px;
-                    margin-top: 20px;
-                    margin-left: calc(50% - 75px);
-                    text-transform: capitalize;
-                    
-                    }   
-                }
-                .section {
-                    width: 100%;
-                  background-color: whitesmoke;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    
-                    .section_wrap {    display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                        padding-top: 10px;
-                        .kaire { font-family: $font-noto;
-                            width: 50%;
-                            font-size: $small;
-                            margin-right: 10px;
-                            @media (max-width: $md) {
-                                font-size: $small;}
-                            .para {
-                                font-size: $medium;
-                                margin: 80px 0px;
-                                text-transform: uppercase;
-                                font-weight: 900;
-                                @media (max-width: $md) {
-                                    font-size: $small;}
-                            }
-                        }
-                        .desine {
-                            font-family: $font-noto;
-                            width: 50%;
-                            font-size: $small;
-                            
-                            .para {
-                                font-size: $medium;
-                                text-transform: uppercase;
-                                margin: 80px 0px;
-                                font-weight: 900; 
-                                @media (max-width: $md) {
-                                    font-size: $small;}
-                                
-                        }}
-                    }}
+    background-image: url("../img/bc/pexels-francesco-ungaro-1525041.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main_wrap {
+      width: 100%;
+      padding-top: 10px;
 
+      img {
+        width: 100%;
+        max-width: 80px;
+        margin-left: calc(50% - 40px);
+        @media (max-width: $sm) {
+          max-width: 50px;
+          margin-left: calc(50% - 25px);
+        }
+      }
+      h1 {
+        text-shadow: 1px 1px 1px white;
+        width: 100%;
+        font-family: $font-noto;
+        max-width: 600px;
+        font-size: $large;
+        color: $myblack;
+        margin-left: calc(50% - 300px);
+        font-weight: bold;
+        text-align: center;
+        padding: 15px 0px;
+        @media (max-width: $md) {
+          margin-left: 0px;
+          font-size: $medium;
+          padding: 5px 0px;
+        }
+      }
+    }
+    p {
+      font-family: $font-roboto;
+      width: 100%;
+      max-width: 600px;
+      font-size: $small;
+      color: $blue;
+      margin-left: calc(50% - 300px);
+      text-align: center;
+      padding: 15px 0px;
+      text-shadow: 1px 1px 1px black;
+      @media (max-width: $md) {
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+      @media (max-width: $md) {
+        padding: 5px 0px;
+      }
+    }
+    .laikas {
+      font-family: $font-noto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding-top: 25px;
+      width: 100%;
+      max-width: 600px;
+      margin-left: calc(50% - 300px);
+      height: 25vmin;
+      @media (max-width: $md) {
+        margin-left: 0px;
+      }
+      @media (max-width: $md) {
+        padding: 5px 0px;
+      }
+    }
+    .dienos {
+      text-shadow: 1px 1px 1px $grey;
+      font-family: $font-roboto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $medium;
+      height: 100%;
+      width: 25%;
+      margin: 2vmin;
+      @media (max-width: $md) {
+        font-size: $small;
+      }
+    }
+  }
+}
+.email__form {
+  width: 100%;
+  max-width: 600px;
+  margin-left: calc(50% - 300px);
+  margin-top: 10%;
+  @media (max-width: $md) {
+    margin-left: 0px;
+  }
+  @media (max-width: $md) {
+    padding: 5px 0px;
+  }
+
+  input {
+    width: 100%;
+    font-family: $font-noto;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid $grey;
+    font-size: $normal;
+    text-transform: capitalize;
+    &::placeholder {
+      color: $grey;
+      text-shadow: 1px 1px 1px white;
+      line-height: 30px;
+    }
+  }
+  button {
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: calc(50% - 75px);
+    text-transform: capitalize;
+  }
+}
+.section {
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .section_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    .kaire {
+      font-family: $font-noto;
+      width: 50%;
+      font-size: $small;
+      margin-right: 10px;
+      @media (max-width: $md) {
+        font-size: $small;
+      }
+      .para {
+        font-size: $medium;
+        margin: 80px 0px;
+        text-transform: uppercase;
+        font-weight: 900;
+        @media (max-width: $md) {
+          font-size: $small;
+        }
+      }
+    }
+    .desine {
+      font-family: $font-noto;
+      width: 50%;
+      font-size: $small;
+
+      .para {
+        font-size: $medium;
+        text-transform: uppercase;
+        margin: 80px 0px;
+        font-weight: 900;
+        @media (max-width: $md) {
+          font-size: $small;
+        }
+      }
+    }
+  }
+}
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    
-    height: 100%;
-    @media (max-width: $md) {
-        width: 98%;
-    }
+  width: 100%;
+  max-width: 1200px;
+
+  height: 100%;
+  @media (max-width: $md) {
+    width: 98%;
+  }
 }

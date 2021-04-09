@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,72 +9,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/svg/001-elephant.svg">
     <link rel="stylesheet" href="./css/app.css">
-    
+
     <script>
         var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
-        var x = setInterval(function() {
-          var now = new Date().getTime();
-          var distance = countDownDate - now;
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          document.getElementById("d").innerHTML = days + " days ";
-          document.getElementById("h").innerHTML = hours + " hours ";
-          document.getElementById("m").innerHTML = minutes + " minutes ";
-          document.getElementById("s").innerHTML = seconds + " seconds ";
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("d").innerHTML = days + " days ";
+            document.getElementById("h").innerHTML = hours + " hours ";
+            document.getElementById("m").innerHTML = minutes + " minutes ";
+            document.getElementById("s").innerHTML = seconds + " seconds ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
         }, 1000);
-        </script>
+    </script>
 
     <title>COMING SOON V1</title>
 </head>
+
 <body>
     <div class="wrapper">
         <main class="main">
-<div class="container">
-    <div class="main_wrap">
-        <img src="./img/svg/001-elephant.svg" alt="logo">
-        <h1>Coming soon</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem eum odit deleniti architecto ratione aspernatur! Totam suscipit fuga consequatur ad impedit ipsam animi tempora quia! Sunt nesciunt praesentium molestiae?</p>
-        <div class="laikas">
-            <div class="dienos">
-                <label id="d"></label>
-            </div>
-            <div class="dienos">
-                <label id="h"></label>
-            </div>
-            <div class="dienos">
-                <label id="m"></label>
-            </div>
-            <div class="dienos">
-                <label id="s">s</label>
-            </div>
-    </div>
-    <form action="#" method="POST" class="email__form">
-        <input type="text" placeholder="type your email">
-        <button type="submit">subscribe now</button>
-    </form>
-</div>
-
+            <div class="container">
+                <div class="main_wrap">
+                    <img src="./img/svg/001-elephant.svg" alt="logo">
+                    <h1>Coming soon</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem eum odit deleniti
+                        architecto ratione aspernatur! Totam suscipit fuga consequatur ad impedit ipsam animi tempora
+                        quia! Sunt nesciunt praesentium molestiae?</p>
+                    <div class="laikas">
+                        <div class="dienos">
+                            <label id="d"></label>
+                        </div>
+                        <div class="dienos">
+                            <label id="h"></label>
+                        </div>
+                        <div class="dienos">
+                            <label id="m"></label>
+                        </div>
+                        <div class="dienos">
+                            <label id="s">s</label>
+                        </div>
+                    </div>
+                    <form action="#" method="POST" class="email__form">
+                        <input type="text" placeholder="type your email">
+                        <button type="submit">subscribe now</button>
+                    </form>
+                </div>
         </main>
         <section class="section">
-<div class="container">
-    <div class="section_wrap">
-        <div class="kaire">
-            <h2 class="para">about startup</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium consequuntur aliquid veritatis neque totam ipsum magnam. Earum eveniet voluptas eius, veritatis obcaecati quidem perspiciatis nobis laboriosam minima illum, sapiente voluptate.</p>
-        </div>
-        <div class="desine">
-            <h3 class="para">have any question?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quibusdam quo similique qui. Magnam earum nostrum necessitatibus ratione, deleniti assumenda temporibus dolor aut cum quis, nemo, possimus officiis delectus modi!</p>
-        </div> 
-    </div>
-</div>
+            <div class="container">
+                <div class="section_wrap">
+                    <div class="kaire">
+                        <h2 class="para">about startup</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium consequuntur aliquid
+                            veritatis neque totam ipsum magnam. Earum eveniet voluptas eius, veritatis obcaecati quidem
+                            perspiciatis nobis laboriosam minima illum, sapiente voluptate.</p>
+                    </div>
+                    <div class="desine">
+                        <h3 class="para">have any question?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quibusdam quo
+                                similique qui. Magnam earum nostrum necessitatibus ratione, deleniti assumenda
+                                temporibus dolor aut cum quis, nemo, possimus officiis delectus modi!</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
+
 </html>
