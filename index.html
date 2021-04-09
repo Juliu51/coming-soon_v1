@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/svg/001-elephant.svg">
+    <link rel="stylesheet" href="./css/app.css">
+    
+    <script>
+        var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("d").innerHTML = days + " days ";
+          document.getElementById("h").innerHTML = hours + " hours ";
+          document.getElementById("m").innerHTML = minutes + " minutes ";
+          document.getElementById("s").innerHTML = seconds + " seconds ";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
+    <title>COMING SOON V1</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <main class="main">
+<div class="container">
+    <div class="main_wrap">
+        <img src="./img/svg/001-elephant.svg" alt="logo">
+        <h1>Coming soon</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem eum odit deleniti architecto ratione aspernatur! Totam suscipit fuga consequatur ad impedit ipsam animi tempora quia! Sunt nesciunt praesentium molestiae?</p>
+        <div class="laikas">
+            <div class="dienos">
+                <label id="d"></label>
+            </div>
+            <div class="dienos">
+                <label id="h"></label>
+            </div>
+            <div class="dienos">
+                <label id="m"></label>
+            </div>
+            <div class="dienos">
+                <label id="s">s</label>
+            </div>
+    </div>
+    <form action="#" method="POST" class="email__form">
+        <input type="text" placeholder="type your email">
+        <button type="submit">subscribe now</button>
+    </form>
+</div>
+
+        </main>
+    </div>
 </body>
 </html>

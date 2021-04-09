@@ -68,3 +68,181 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .main {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bc/pexels-francesco-ungaro-1525041.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .main .main_wrap {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.wrapper .main .main_wrap img {
+  width: 100%;
+  max-width: 80px;
+  margin-left: calc(50% - 40px);
+}
+
+@media (max-width: 400px) {
+  .wrapper .main .main_wrap img {
+    max-width: 50px;
+    margin-left: calc(50% - 25px);
+  }
+}
+
+.wrapper .main .main_wrap h1 {
+  width: 100%;
+  max-width: 600px;
+  font-size: 55px;
+  color: rgba(34, 34, 34, 0.913);
+  margin-left: calc(50% - 300px);
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+@media (max-width: 400px) {
+  .wrapper .main .main_wrap h1 {
+    margin-left: 0px;
+    font-size: 35px;
+    padding: 5px 0px;
+  }
+}
+
+@media (max-width: 400px) and (max-width: 720px) {
+  .wrapper .main .main_wrap h1 {
+    margin-left: 0px;
+    padding: 5px 0px;
+  }
+}
+
+.wrapper .main .main_wrap p {
+  width: 100%;
+  max-width: 600px;
+  font-size: 18px;
+  color: #35d3ab;
+  margin-left: calc(50% - 300px);
+  text-align: center;
+  padding: 15px 0px;
+  text-shadow: 1px 1px 1px black;
+}
+
+@media (max-width: 720px) {
+  .wrapper .main .main_wrap p {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper .main .main_wrap p {
+    padding: 5px 0px;
+  }
+}
+
+.wrapper .main .main_wrap .laikas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 25px;
+  width: 100%;
+  height: 25vmin;
+}
+
+@media (max-width: 720px) {
+  .wrapper .main .main_wrap .laikas {
+    padding: 5px 0px;
+  }
+}
+
+.wrapper .main .main_wrap .dienos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  height: 100%;
+  width: 25%;
+  margin: 2vmin;
+}
+
+@media (max-width: 720px) {
+  .wrapper .main .main_wrap .dienos {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper .main .main_wrap .dienos {
+    padding: 5px 0px;
+  }
+}
+
+.email__form {
+  width: 100%;
+  max-width: 600px;
+  margin-left: calc(50% - 300px);
+  margin-top: 10%;
+}
+
+@media (max-width: 720px) {
+  .email__form {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 720px) {
+  .email__form {
+    padding: 5px 0px;
+  }
+}
+
+.email__form input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #505050;
+  font-size: 23px;
+  text-transform: capitalize;
+}
+
+.email__form input::placeholder {
+  color: #grey;
+  text-shadow: 1px 1px 1px white;
+  line-height: 30px;
+}
+
+.email__form button {
+  width: 150px;
+  height: 35px;
+  margin-left: calc(50% - 75px);
+  background-color: #ff2761;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 2px 2px 2px #454545;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 98%;
+  }
+}
