@@ -5,7 +5,7 @@
   .main {
     width: 100%;
     height: 100%;
-    background-image: url("../img/bc/pexels-francesco-ungaro-1525041.jpg");
+    background-image: url("../img/bc/pexels-veeterzy-303383.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -26,12 +26,12 @@
         }
       }
       h1 {
-        text-shadow: 1px 1px 1px white;
+        text-shadow: 1px 1px 1px #d6cfcb;
         width: 100%;
         font-family: $font-noto;
         max-width: 600px;
         font-size: $large;
-        color: $myblack;
+        color: #a6808c;
         margin-left: calc(50% - 300px);
         font-weight: bold;
         text-align: center;
@@ -48,11 +48,10 @@
       width: 100%;
       max-width: 600px;
       font-size: $small;
-      color: $blue;
+      color: #9a8c98;
       margin-left: calc(50% - 300px);
       text-align: center;
       padding: 15px 0px;
-      text-shadow: 1px 1px 1px black;
       @media (max-width: $md) {
         margin-left: 0px;
         margin-top: 10px;
@@ -104,18 +103,19 @@
       @media (max-width: $md) {
         padding: 5px 0px;
       }
-    
+
       input {
         width: 100%;
         font-family: $font-noto;
         background: transparent;
+        color: #a6808c;
         border: 0;
         border-bottom: 2px solid $grey;
         font-size: $normal;
         text-transform: capitalize;
         &::placeholder {
-          color: $grey;
-          text-shadow: 1px 1px 1px white;
+          color: #a6808c;
+          text-shadow: 1px 1px 1px #d6cfcb;
           line-height: 30px;
         }
       }
@@ -143,6 +143,7 @@
   height: 700px;
   display: flex;
   justify-content: center;
+
   @media (max-width: $xl) {
     height: 100%;
   }
@@ -270,13 +271,86 @@
 }
 .footer {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
-  height: 250px;
-  background-color: slateblue;
+  height: 450px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    53deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(230, 222, 218, 1) 100%
+  );
+
   .footer_wrap {
-    width: 80%;
-    
+    width: 100%;
+    height: 100%;
+    .wolf {
+      float: right;
+      width: 80px;
+    }
+    img {
+      height: 70px;
+      width: 70px;
+    }
+    h3 {
+      text-shadow: 1px 1px 1px #d6cfcb;
+      width: 100%;
+      font-family: $font-noto;
+      max-width: 600px;
+      font-size: $medium;
+      color: #a6808c;
+      margin-left: calc(50% - 300px);
+      margin-right: 80px;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px 0px;
+      @media (max-width: $md) {
+        margin-left: 0px;
+        font-size: $small;
+        padding: 5px 0px;
+      }
+      @media (max-width: $sm) {
+        float: right;
+      }
+    }
+    .logo_c {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .copyright {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0;
+      font-weight: 800;
+      font-size: $small;
+      font-family: "Times New Roman", Times, serif;
+      p {
+        width: calc(100% / 3);
+        text-align: center;
+      }
+    }
+    h4 {
+      width: 100%;
+      font-family: $font-roboto;
+      width: 100%;
+      max-width: 600px;
+      font-size: $small;
+      color: #9a8c98;
+      margin-left: calc(50% - 300px);
+      text-align: center;
+      padding: 15px 0px;
+      @media (max-width: $md) {
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+      span {
+        color: red;
+      }
+    }
   }
 }
 
