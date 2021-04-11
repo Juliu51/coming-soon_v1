@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
-  height: 100%;
+  // height: 100%;
+
   .main {
     width: 100%;
     height: 100%;
@@ -92,6 +93,40 @@
         font-size: $small;
       }
     }
+    .email__form {
+      width: 100%;
+      max-width: 600px;
+      margin-left: calc(50% - 300px);
+      margin-top: 10%;
+      @media (max-width: $md) {
+        margin-left: 0px;
+      }
+      @media (max-width: $md) {
+        padding: 5px 0px;
+      }
+    
+      input {
+        width: 100%;
+        font-family: $font-noto;
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid $grey;
+        font-size: $normal;
+        text-transform: capitalize;
+        &::placeholder {
+          color: $grey;
+          text-shadow: 1px 1px 1px white;
+          line-height: 30px;
+        }
+      }
+      button {
+        width: 150px;
+        height: 45px;
+        margin-top: 20px;
+        margin-left: calc(50% - 75px);
+        text-transform: capitalize;
+      }
+    }
     .mouse {
       width: 60px;
       height: 90px;
@@ -102,106 +137,86 @@
     }
   }
 }
-.email__form {
-  width: 100%;
-  max-width: 600px;
-  margin-left: calc(50% - 300px);
-  margin-top: 10%;
-  @media (max-width: $md) {
-    margin-left: 0px;
-  }
-  @media (max-width: $md) {
-    padding: 5px 0px;
-  }
-
-  input {
-    width: 100%;
-    font-family: $font-noto;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid $grey;
-    font-size: $normal;
-    text-transform: capitalize;
-    &::placeholder {
-      color: $grey;
-      text-shadow: 1px 1px 1px white;
-      line-height: 30px;
-    }
-  }
-  button {
-    width: 150px;
-    height: 45px;
-    margin-top: 20px;
-    margin-left: calc(50% - 75px);
-    text-transform: capitalize;
-  }
-}
 
 .section {
   width: 100%;
-  height: 100%;
-  background-color: whitesmoke;
+  height: 700px;
   display: flex;
   justify-content: center;
-
+  @media (max-width: $xl) {
+    height: 100%;
+  }
   .section_wrap {
     display: inline-block;
     width: 100%;
-    height: 40px;
-    padding: 10px 0px;
+    // height: 40px;
+    padding: 70px 0px;
     .kaire_cont,
     .desine_cont {
       width: 95%;
-      margin-left: 3px;
+      margin-left: 2.5%;
     }
     .para {
-      font-size: $medium;
+      font-size: $normal;
       text-transform: uppercase;
       padding: 40px 0px;
       font-weight: 900;
-      padding:15px 0px;
+      padding: 15px 0px;
       color: $myblack;
-      @media (max-width: $xl) {
-        font-size: $normal;
+    }
+    p {
+      font-family: $font-noto;
+      padding: 15px 0px;
+      line-height: 35px;
+      font-size: $small;
+      span {
+        color: red;
       }
     }
-      p {
-        font-family: $font-noto;
-        padding:15px 0px;
-        line-height: 35px;
-        font-size: $normal;
-        span {
-           color: red;
-        }
-        @media (max-width: $xl) {
-          font-size: $small;
-        }
-        
-      }
-      .animation {
+    .animation {
+      margin-top: 30px;
+      width: 100%;
+      height: 100%;
+      padding: 10px 0px;
+      display: inline-block;
+      .bar_row {
+        position: relative;
         width: 100%;
-        height: 100%;
-        padding: 15px 0px;
-        display: inline-block;
-        .bar_row {
+        height: 50px;
+        margin: 1px 0px;
+        label {
+          width: 50%;
+          float: left;
+          font-family: $font-roboto;
+          color: $myblack;
+        }
+        span {
+          width: 50%;
+          float: right;
+          text-align: right;
+          font-family: $font-noto;
+          font-weight: 600;
+        }
+        .row_wrap {
+          width: 100%;
+          .line {
+            bottom: 8px;
+            height: 2px;
             width: 100%;
-            height: 50px;
-            margin: 1px 0px;
-            label {
-                width: 50%;
-                float: left;
-            }
-            span {
-width: 50%;
-float: right;
-text-align: right;
-            }
+            background-color: $grey;
+            position: absolute;
+            border-radius: 10px;
+          }
+          .active {
+            @extend .line;
+            background-color: blue;
+          }
         }
       }
+    }
     .kaire {
       width: 50%;
       float: left;
-      // margin-right: 10px;
       @media (max-width: $xl) {
         width: 100%;
       }
@@ -209,18 +224,67 @@ text-align: right;
     .desine {
       float: left;
       width: 50%;
-
       @media (max-width: $xl) {
-        width: 100%; 
+        width: 100%;
+      }
+      form {
+        display: inline-block;
+        width: 100%;
+        font-size: $small;
+        @media (max-width: xl) {
+          height: 2000px;
+        }
+        .email {
+          margin-left: 10%;
+          @media (max-width: $xl) {
+            margin-left: 0px;
+          }
+        }
+        input,
+        textarea {
+          display: inline-block;
+          width: 45%;
+          padding: 5px 0px;
+          float: left;
+          margin: 30px 0px;
+          line-height: $normal;
+          color: #555;
+          border: transparent;
+          border-bottom: 1.5px solid $grey;
+          outline: none;
+          @media (max-width: $xl) {
+            width: 100%;
+          }
+        }
+        .texta {
+          width: 100%;
+          resize: none;
+          min-height: 50px;
+        }
+        button {
+          float: right;
+        }
       }
     }
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  background-color: slateblue;
+  .footer_wrap {
+    width: 80%;
+    
   }
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
-
+  display: inline-block;
+  padding: 2px 0;
   height: 100%;
   @media (max-width: $md) {
     width: 98%;
