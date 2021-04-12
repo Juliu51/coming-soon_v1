@@ -389,8 +389,6 @@ h6 {
 
 .section .section_wrap .animation .bar_row .row_wrap {
   width: 100%;
-  animation: active 3s ease-in-out;
-  animation-fill-mode: both;
 }
 
 .section .section_wrap .animation .bar_row .row_wrap .line, .section .section_wrap .animation .bar_row .row_wrap .active {
@@ -497,8 +495,10 @@ h6 {
 }
 
 .footer .footer_wrap .wolf {
+  position: relative;
   float: right;
   width: 80px;
+  top: -40px;
 }
 
 .footer .footer_wrap img {
