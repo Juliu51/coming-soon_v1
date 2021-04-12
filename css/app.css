@@ -86,6 +86,10 @@ h6 {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 100%;
 }
