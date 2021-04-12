@@ -389,6 +389,8 @@ h6 {
 
 .section .section_wrap .animation .bar_row .row_wrap {
   width: 100%;
+  animation: active 3s ease-in-out;
+  animation-fill-mode: both;
 }
 
 .section .section_wrap .animation .bar_row .row_wrap .line, .section .section_wrap .animation .bar_row .row_wrap .active {
