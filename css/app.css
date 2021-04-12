@@ -515,6 +515,7 @@ html {
   float: right;
   width: 80px;
   top: -40px;
+  border-radius: 100%;
 }
 
 .footer .footer_wrap img {
