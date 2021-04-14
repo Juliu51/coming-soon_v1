@@ -327,7 +327,7 @@ html {
   animation-delay: 1s;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in;
 }
 
 @keyframes wheel {
@@ -431,6 +431,9 @@ html {
 
 .section .section_wrap .animation .bar_row .row_wrap .active {
   background-color: blue;
+  animation-name: bars;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
 }
 
 .section .section_wrap .kaire {
@@ -632,6 +635,16 @@ html {
 @media (max-width: 920px) {
   .container {
     width: 98%;
+  }
+}
+
+@keyframes bars {
+  0% {
+    width: 0%;
+    background-color: #505050;
+  }
+  100% {
+    background-color: blue;
   }
 }
 

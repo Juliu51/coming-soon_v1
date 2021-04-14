@@ -189,7 +189,7 @@
         animation-delay: 1s;
         animation-duration: 3s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-out;
+        animation-timing-function: ease-in;
       }
     }
     @keyframes wheel {
@@ -277,6 +277,9 @@
           .active {
             @extend .line;
             background-color: blue;
+            animation-name: bars;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
           }
         }
       }
@@ -437,4 +440,15 @@
   @media (max-width: $xl) {
     width: 98%;
   }
+}
+
+@keyframes bars {
+  0% {
+    width: 0%;
+    background-color: $grey;
+  }
+  100%{
+    background-color: blue;
+  }
+  
 }
