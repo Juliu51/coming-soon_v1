@@ -178,6 +178,29 @@
       margin-left: calc(50% - 15px);
       margin-top: 80px;
       border-radius: 18px;
+      .wheel {
+        display: inline-block;
+        width: 6px;
+        height: 20px;
+        background-color: red;
+        margin-left: calc(50% - 3px);
+        margin-top: 5px;
+        animation-name: wheel;
+        animation-delay: 1s;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+      }
+    }
+    @keyframes wheel {
+      0% {
+        margin-top: 8px;
+        background-color: #ee432e;
+      }
+      100% {
+        margin-top: 15px;
+        background-color: white;
+      }
     }
   }
 }
