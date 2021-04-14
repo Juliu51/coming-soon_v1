@@ -641,10 +641,10 @@ html {
 @keyframes bars {
   0% {
     width: 0%;
-    background-color: #505050;
+    background-color: #2fb1d8;
   }
   100% {
-    background-color: blue;
+    background-color: #1c5dbe;
   }
 }
 

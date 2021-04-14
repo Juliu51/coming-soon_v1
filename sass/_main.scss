@@ -430,7 +430,6 @@
     }
   }
 }
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -441,14 +440,12 @@
     width: 98%;
   }
 }
-
 @keyframes bars {
   0% {
     width: 0%;
-    background-color: $grey;
+    background-color: rgb(47, 177, 216);
   }
-  100%{
-    background-color: blue;
+  100% {
+    background-color: rgb(28, 93, 190);
   }
-  
 }
